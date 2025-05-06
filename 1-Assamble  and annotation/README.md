@@ -1,7 +1,9 @@
 # haplotype assembly, DZ means "Dongzao"
 # current directory: 
+```
 
 hifiasm -o DZ_hap -t 40 --ul-cut 15000 -D10 --hom-cov 71 --h1 DZ_Hic_clean.R1.fastq.gz --h2 DZ_Hic_clean.R1.fastq.gz --ul ONT_UL_pass_reads.fasta.gz Hifi.ccs.fastq.gz >DZ_hap.log 2>DZ_hap.err.log
+```
 
 # the above command generated two preliminary haplotypes: DZ_hap.hic.hap1.p_ctg.gfa and DZ_hap.hic.hap2.p_ctg.gfa
 # run purge_dups to remove filter the raw assemply
