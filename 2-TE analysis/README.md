@@ -18,7 +18,6 @@ trf2gff -i DZ.genome.fa.2.7.7.80.10.50.500.dat -o DZ.genome.fa.2.7.7.80.10.50.50
 ```
 ## Step3. TE analysis for constructing phylogenetic trees of LTR-RT structural domains across multiple species
 ```
-
 "DZ.genome.ltr.fa" ## LTR-RT sequences extracted from ltr.retriever identification results
 "DZ" ## Prefix for generated files
 TEsorter -db rexdb-plant -p 20 DZ.genome.ltr.fa  ## Identify LTR-RT structural domains using TEsorter
