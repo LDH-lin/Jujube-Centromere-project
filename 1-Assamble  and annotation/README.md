@@ -11,7 +11,7 @@ hifiasm -o DZ_hap -t 40 --ul-cut 15000 -D10 --hom-cov 71 --h1 DZ_Hic_clean.R1.fa
 sh run_purge_dups.sh
 
 # This will generated cleaned contigs named DZ_hap1.purged.fas and DZ_hap2.purged.fas
-
+```
 #run quarTeT to link contigs to chromosomes using our previous T2T assembly of DZ
 python quartet.py AssemblyMapper -r DZ.t2t.final.fas -q DZ_hap1.purged.fas -i 95 -p DZ_hap1 -t 10 --plot --overwrite
 python quartet.py AssemblyMapper -r DZ.t2t.final.fas -q DZ_hap2.purged.fas -i 95 -p DZ_hap2 -t 10 --plot --overwrite
@@ -35,4 +35,4 @@ RepeatMasker -e rmblast -pa 10 -lib DZ.lib -dir DZ_hap2.Rm_results -gff -a DZ_ha
 ##Protein gene prediction and functional annotation
 
 sh run_annotation.sh sample.lst
-
+```
