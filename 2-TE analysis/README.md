@@ -8,8 +8,9 @@ RepeatMasker -lib DZ-families.fa ‐xsmall  -gff  -e ncbi -dir .  -pa 30 DZ.geno
 ```
 
 ## Step2. Identification of LTR-RTs using ltr.retriever.sh
+```
 ltr.retriever.sh DZ /data/DZ.genome.fa DZ.genome.fa
-
+```
 ## Step3. Tandem Repeat Identification​​
 ```
 trf DZ.genome.fa   2 7 7 80 10 50 500 -l 20 -d -m -h
